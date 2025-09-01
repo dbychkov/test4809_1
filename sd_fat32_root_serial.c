@@ -5,6 +5,10 @@
  *
  * Uses SPI to communicate with SD Card.
  * Assumes SD Card is formatted as FAT32.
+ * Pin configuration may need adjustment for your hardware.
+ * This example assumes only the first cluster of the root directory is displayed (most cards will show many entries).
+ * No error handling for long file names (LFN) or subdirectories.
+ * Use a USB-to-Serial adapter connected to TXD (PC0) to view output.
  * 
  * Pin mapping (change as needed):
  *   MOSI: PA0
